@@ -5,14 +5,16 @@ const {
   createThought,
   updateThought,
   deleteThought,
-} = require("../../controllers/thoughtControllers");
+} = require("../../controllers/thoughtController");
 
-router.route("/").get(getThoughts).post(createThought);
+router
+  .route("/")
+  .get(getThoughts)
+  .post(createThought);
 
 router
   .route("/:thoughtId")
   .get(getSingleThought)
-  .post(createThought)
   .put(updateThought)
   .delete(deleteThought);
 

@@ -12,6 +12,7 @@ const thoughtSchema = new Schema(
     createdAt: {
       type: Date,
       default: Date.now,
+      get: timestamp => dayjs.unix(timestamp).format('MM/DD/YYYY hh:mm') 
     },
     username: {
       type: String,
@@ -26,6 +27,10 @@ const thoughtSchema = new Schema(
     },
   }
 );
+
+thoughtSchema.virtual('reactionCount').get(function () {
+    return this.reactions.length;
+});
 
 const Thought = model("Thought", thoughtSchema);
 

@@ -1,7 +1,16 @@
-const { connect, connection } = require('mongoose');
+const express = require("express");
+const db = require("./config/connection");
+const routes = require("./routes");
 
-const connectionString = 'mongodb://127.0.0.1:27017/studentsDB';
+const PORT = process.env.PORT || 3001;
+const app = express();
 
-connect(connectionString);
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+app.use(routes);
 
-module.exports = connection;
+db.once("open", () => {
+  app.listen(PORT, () => {
+    console.log(`API server running on port ${PORT}!`);
+  });
+});
