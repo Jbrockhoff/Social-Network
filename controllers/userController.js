@@ -14,3 +14,5 @@
 
 //DEL to delete user
 
+//DEL to delete associated thoughts when user is deleted
+

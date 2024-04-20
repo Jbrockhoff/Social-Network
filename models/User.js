@@ -15,9 +15,9 @@ const userSchema = new Schema({
     required: true,
     validate: {
       validator: function (v) {
-        return  /^[\w-]+(\.[\w-]+)*@[\w-]+(\.[\w-]+)+$/.test(v);
+        return /^[\w-]+(\.[\w-]+)*@[\w-]+(\.[\w-]+)+$/.test(v);
       },
-    message: props => `${props.value} is not a valid email address!`
+      message: (props) => `${props.value} is not a valid email address!`,
     },
   },
 
