@@ -8,7 +8,7 @@ const reactionSchema = new Schema({
   reactionBody: {
     type: String,
     required: true,
-    maxLength: 280,
+    maxlength: 280,
   },
   username: {
     type: String,
@@ -17,10 +17,7 @@ const reactionSchema = new Schema({
   createdAt: {
     type: Date,
     default: Date.now,
-  },
-  toJSON: {
-    getters: true,
-  },
+  }
 });
 
 module.exports = reactionSchema;
