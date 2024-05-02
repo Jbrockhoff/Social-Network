@@ -20,6 +20,8 @@ https://github.com/Jbrockhoff/Social-Network
 
 Here is the link to the walkthrough video for this application:
 
+https://github.com/Jbrockhoff/Social-Network
+
 
 
 ## License
