@@ -22,7 +22,8 @@ Here is the link to the walkthrough video for this application:
 
 https://github.com/Jbrockhoff/Social-Network
 
-
+|Here is a screenshot of my appilcation:
+![social.png](./assets/social.png)
 
 ## License
 MIT
