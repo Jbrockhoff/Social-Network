@@ -20,7 +20,7 @@ https://github.com/Jbrockhoff/Social-Network
 
 Here is the link to the walkthrough video for this application:
 
-https://github.com/Jbrockhoff/Social-Network
+https://drive.google.com/file/d/1Wcz5JD9ot0dyiZ7sfClg-vuHZ9V5d0TY/view?usp=sharing
 
 |Here is a screenshot of my appilcation:
 ![social.png](./assets/social.png)
